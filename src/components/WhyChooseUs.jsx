@@ -36,15 +36,15 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-us" className="py-20 lg:py-28 bg-[#fafaf9] border-t border-slate-200/80">
+    <section id="why-us" className="py-20 lg:py-28 bg-white bg-pattern-grid border-b border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
             The Absolute Standard
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
             Why Miami Property Owners Choose Us
           </h2>
           <p className="text-base sm:text-lg text-slate-600">
@@ -59,9 +59,9 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-teal-500/40 transition-all duration-300 space-y-4"
+                className="bg-white/95 p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-teal-500/50 transition-all duration-300 space-y-4 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold">
+                <div className="w-12 h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">
@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Local Banner Callout */}
-        <div className="mt-16 rounded-2xl bg-gradient-to-r from-slate-900 via-teal-950 to-slate-900 text-white p-8 md:p-10 border border-teal-800/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-16 rounded-3xl bg-gradient-to-r from-teal-900 via-emerald-950 to-slate-900 text-white p-8 md:p-10 border border-teal-700/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
               <CheckCircle className="w-4 h-4" />

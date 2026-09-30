@@ -27,15 +27,15 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 lg:py-28 bg-[#fafaf9] border-t border-slate-200/80">
+    <section id="testimonials" className="py-20 lg:py-28 bg-white bg-pattern-grid border-b border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
             Verified Reviews
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
             What Our Miami Clients Say
           </h2>
           <p className="text-base sm:text-lg text-slate-600">
@@ -48,7 +48,7 @@ export default function Testimonials() {
           {reviews.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition-all"
+              className="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col justify-between hover:shadow-xl hover:border-teal-500/40 transition-all"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -69,7 +69,7 @@ export default function Testimonials() {
                   <h4 className="text-sm font-bold text-slate-900">{item.name}</h4>
                   <p className="text-xs text-slate-500">{item.role}</p>
                 </div>
-                <div className="flex items-center gap-1 text-[11px] font-bold text-teal-700 bg-teal-50 px-2 py-1 rounded-full">
+                <div className="flex items-center gap-1 text-[11px] font-bold text-teal-800 bg-teal-50 px-2.5 py-1 rounded-full border border-teal-200/60">
                   <CheckCircle className="w-3.5 h-3.5" />
                   <span>Verified</span>
                 </div>

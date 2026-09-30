@@ -35,15 +35,15 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-white border-t border-slate-200/80">
+    <section id="contact" className="py-20 lg:py-28 bg-[#fafaf9] bg-pattern-dots border-b border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-teal-100/80 border border-teal-200 text-teal-900 text-xs font-bold uppercase tracking-wider">
             Get In Touch
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
             Request Your Free Landscape Estimate
           </h2>
           <p className="text-base sm:text-lg text-slate-600">
@@ -57,7 +57,7 @@ export default function ContactSection() {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Address Card */}
-            <div className="p-6 rounded-2xl bg-[#fafaf9] border border-slate-200 shadow-sm flex items-start gap-4">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-teal-700 text-white flex items-center justify-center shrink-0 shadow-md shadow-teal-700/20">
                 <MapPin className="w-6 h-6 text-amber-400" />
               </div>
@@ -69,7 +69,7 @@ export default function ContactSection() {
             </div>
 
             {/* Phone Card */}
-            <div className="p-6 rounded-2xl bg-[#fafaf9] border border-slate-200 shadow-sm flex items-start gap-4">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 shadow-md shadow-slate-900/20">
                 <Phone className="w-6 h-6 text-teal-400" />
               </div>
@@ -86,7 +86,7 @@ export default function ContactSection() {
             </div>
 
             {/* Email Card */}
-            <div className="p-6 rounded-2xl bg-[#fafaf9] border border-slate-200 shadow-sm flex items-start gap-4">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-teal-800 text-white flex items-center justify-center shrink-0 shadow-md shadow-teal-800/20">
                 <Mail className="w-6 h-6 text-amber-400" />
               </div>
@@ -106,7 +106,7 @@ export default function ContactSection() {
 
           {/* Right: Interactive Estimate Form */}
           <div className="lg:col-span-7">
-            <div className="bg-[#fafaf9] border border-slate-200 p-8 sm:p-10 rounded-3xl shadow-lg relative overflow-hidden">
+            <div className="bg-white border border-slate-200/90 p-8 sm:p-10 rounded-3xl shadow-xl relative overflow-hidden">
               <div className="space-y-2 mb-8">
                 <div className="flex items-center gap-2 text-teal-700 font-bold text-xs uppercase tracking-wider">
                   <Sparkles className="w-4 h-4 text-amber-500" />
@@ -140,7 +140,7 @@ export default function ContactSection() {
                       value={formData.fullName}
                       onChange={handleChange}
                       placeholder="e.g. Marcus Sterling"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     />
                   </div>
                   <div>
@@ -154,7 +154,7 @@ export default function ContactSection() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="(239) 000-0000"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     />
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function ContactSection() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="marcus@example.com"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     />
                   </div>
                   <div>
@@ -185,7 +185,7 @@ export default function ContactSection() {
                       value={formData.address}
                       onChange={handleChange}
                       placeholder="Street, City, Zip Code"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     />
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function ContactSection() {
                       name="serviceType"
                       value={formData.serviceType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     >
                       <option value="St. Augustine & Zoysia Turf Care">St. Augustine & Zoysia Turf Care</option>
                       <option value="Tropical Botanical Garden Design">Tropical Botanical Garden Design</option>
@@ -217,7 +217,7 @@ export default function ContactSection() {
                       name="frequency"
                       value={formData.frequency}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                     >
                       <option value="Weekly Estate Maintenance">Weekly Estate Maintenance</option>
                       <option value="Bi-Weekly Maintenance">Bi-Weekly Maintenance</option>
@@ -237,7 +237,7 @@ export default function ContactSection() {
                     value={formData.notes}
                     onChange={handleChange}
                     placeholder="Tell us about lawn dimensions, palm heights, gate access, current turf health, etc."
-                    className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:ring-2 focus:ring-teal-600 focus:bg-white focus:outline-none"
                   ></textarea>
                 </div>
 
